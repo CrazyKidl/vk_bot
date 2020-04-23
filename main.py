@@ -14,6 +14,7 @@ from yandex_translate import YandexTranslate
 
 
 def main():
+
     with open('audio_list.txt', 'r') as audiolist:
         audio_list = []
         audio = audiolist.read().splitlines()
