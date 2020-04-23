@@ -696,8 +696,6 @@ def main():
                 send('Нет')
             elif event.text.lower() == 'нет':
                 send('Да')
-            elif event.text.lower() == 'случайное число':
-                send(random.randint(0, 100))
 
 
 if __name__ == '__main__':

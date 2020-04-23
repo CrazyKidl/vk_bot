@@ -652,14 +652,10 @@ def main():
                 send('Даун')
             elif event.object.text.lower() == 'кек':
                 send('Лол')
-            elif event.object.text.lower() == 'ytn':
-                send('Lf')
             elif event.object.text.lower() == 'хрюшка':
                 send('Павтарюшка')
             elif event.object.text.lower() == 'полиночка':
                 send(emoji.emojize('Спасибки):two_hearts:'))
-            elif event.object.text.lower() == 'lf':
-                send('ytn')
             elif event.object.text.lower() == 'питон' or event.object.text.lower() == 'питончик' or event.object.text.lower() == 'питоньчик' or event.object.text.lower() == 'питон)' or event.object.text.lower() == 'питончик)' or event.object.text.lower() == 'питоньчик)' or event.object.text.lower() == 'python' or event.object.text.lower() == 'python)' or event.object.text.lower() == 'python))0)':
                 send("ИТС МАЙ ЛАААЙФ")
             elif event.object.text.lower() == 'ъ' or event.object.text.lower() == 'ъ)':
