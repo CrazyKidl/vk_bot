@@ -199,7 +199,6 @@ def main():
 
     for event in longpoll.listen():
         if event.type == VkBotEventType.MESSAGE_NEW and event.from_chat:
-            print(event.object.text)
             if event.object.text.lower() == 'разрабы' or event.object.text.lower() == 'разработчики':
                 send('@lev_poznyakov(Лев Позняков) \nПри поддержке \n@lilechkapetushok(Лиля Петухова)')
             elif event.object.text.lower() == 'гдз' or event.object.text.lower() == 'gdz' or event.object.text.lower() == 'ulp' or event.object.text.lower() == 'пвя':

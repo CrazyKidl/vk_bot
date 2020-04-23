@@ -479,7 +479,7 @@ def main():
                                                     break
                                         break
                                     else:
-                                        send('Ты чо сказал я не понял пака3')
+                                        send('Ты чо сказал я не понял пака')
                                         break
                             break
                         elif event.text.lower() == 'отмена':
