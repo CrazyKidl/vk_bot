@@ -11,6 +11,7 @@ import cfscrape
 import random
 from vk_api.keyboard import VkKeyboard, VkKeyboardColor
 from yandex_translate import YandexTranslate
+import token
 
 
 def main():
@@ -21,13 +22,13 @@ def main():
             a, b = i.split(', ')
             audio_list.append([int(a), int(b)])
     vk_session = vk_api.VkApi(
-        token="a29402b61e4d81ecbd0c0bafca4bfe9e5fca66942fd5e283c1946abbc50d38f084a33ee6fe98fe717bbec")
+        token=token.token)
     vk = vk_session.get_api()
     longpoll = VkBotLongPoll(vk_session, 192674616)
     wikipedia.set_lang("RU")
     upload = VkUpload(vk_session)
     session = requests.Session()
-    translate = YandexTranslate('trnsl.1.1.20200420T104155Z.20651825ec88b646.9a67150ea679d890a8bb3d0d22f2040f3e283f0b')
+    translate = YandexTranslate(token.translate_token)
     abc = {'q': 'й', 'w': 'ц', 'e': 'у', 'r': 'к', 't': 'е', 'y': 'н', 'u': 'г', 'i': 'ш', 'o': 'щ', 'p': 'з', 'a': 'ф',
            's': 'ы', 'd': 'в', 'f': 'а', 'g': 'п', 'h': 'р', 'j': 'о', 'k': 'л', 'l': 'д', 'z': 'я', 'x': 'ч', 'c': 'с',
            'v': 'м', 'b': 'и', 'n': 'т', 'm': 'ь', '[': 'х', ']': 'ъ', ',': 'б', '.': 'ю', "'": 'э', ' ': ' ', 'Q': 'Й',
