@@ -6,11 +6,10 @@ go = input('Go?')
 
 def start(q):
     i = 1
-    while i <= 77:
+    while i <= 10:
         images = []
         true_images = []
-        site = 'https://gdz.ru/class-7/geometria/pogorelov-9/' + str(q) + '-item-'
-        site += str(i) + '/'
+        site = 'https://gdz.ru/class-7/himiya/gabrielyan-vvodnij-kurs/' + str(q) + '-quest-' + str(i) + '/'
         soup = BeautifulSoup(cfscrape.create_scraper().get(site).content.decode('utf-8'), 'html.parser')
         for k in soup.findAll('img'):
             true_images.append('http:' + k.get('src'))
@@ -20,7 +19,7 @@ def start(q):
                     images.append(l)
         except Exception:
             pass
-        file = open('gdz/class-7/geometria/pogorelov-9/' + str(q) + '-item-/' + str(i) + '.txt', 'w')
+        file = open('gdz/class-7/himiya/gabrielyan-vvodnij-kurs/' + str(q) + '-quest-/' + str(i) + '.txt', 'w')
         for j in images:
             file.write(j + '\n')
         file.close()
@@ -29,7 +28,7 @@ def start(q):
 
 if go == 'go':
     q = 1
-    while q <= 15:
+    while q <= 19:
         start(q)
         q += 1
 else:
