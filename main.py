@@ -217,7 +217,9 @@ def main():
                     elif event.object.text.lower() == '[club192674616|@dapizdabot] 7 класс' or event.object.text.lower() == '[club192674616|да (бот)] 7 класс':
                         site += 'class-7/'
                         file += 'class-7/'
-                        send_keyboard('Алгебра', 'Русский язык', 'История', 'Физика', 'Геометрия',
+                        send_keyboard('Алгебра', 'Русский язык', 'История', 'Физика', 'Геометрия', 'Биология',
+                                      'География', 'Химия', 'Литература', 'Музыка', 'Немецкий язык', 'ОБЖ',
+                                      'Обществознание', 'Технология', 'Украинский язык',
                                       mes='Выберите предмет: ')
                         for event in longpoll.listen():
                             if event.object.text.lower() == '[club192674616|@dapizdabot] алгебра' or event.object.text.lower() == '[club192674616|да (бот)] алгебра':
@@ -408,6 +410,262 @@ def main():
                                                     if send_ex(file=file, site=site, n=0) == 'break': break
                                                     break
                                                 break
+                            elif event.object.text.lower() == '[club192674616|@dapizdabot] биология' or event.object.text.lower() == '[club192674616|да (бот)] биология':
+                                site += 'biologiya/'
+                                file += 'biologiya/'
+                                send_keyboard('Пасечник', mes='Выберите учебник: ')
+                                for event in longpoll.listen():
+                                    if event.object.text.lower() == '[club192674616|@dapizdabot] пасечник' or event.object.text.lower() == '[club192674616|да (бот)] пасечник':
+                                        site += 'pasechnik-tetrad/'
+                                        file += 'pasechnik-tetrad/'
+                                        send_keyboard('Параграфы', mes='Выберите: ')
+                                        for event in longpoll.listen():
+                                            if event.object.text.lower() == '[club192674616|@dapizdabot] параграфы' or event.object.text.lower() == '[club192674616|да (бот)] параграфы':
+                                                send('Введите номер параграфа: ')
+                                                if send_ex(file=file, site=site, n='-item/') == 'break': break
+                                                break
+                                            else:
+                                                send('Ты чо сказал я не понял пака')
+                                                break
+                                        break
+                                    else:
+                                        send('Ты чо сказал я не понял пака')
+                                        break
+                                break
+                            elif event.object.text.lower() == '[club192674616|@dapizdabot] немецкий язык' or event.object.text.lower() == '[club192674616|да (бот)] немецкий язык':
+                                site += 'nemeckiy_yazik/'
+                                file += 'nemeckiy_yazik/'
+                                send_keyboard('Бим', mes='Выберите учебник: ')
+                                for event in longpoll.listen():
+                                    if event.object.text.lower() == '[club192674616|@dapizdabot] бим' or event.object.text.lower() == '[club192674616|да (бот)] бим':
+                                        site += 'bim/'
+                                        file += 'bim/'
+                                        send_keyboard('Страницы', mes='Выберите: ')
+                                        for event in longpoll.listen():
+                                            if event.object.text.lower() == '[club192674616|@dapizdabot] страницы' or event.object.text.lower() == '[club192674616|да (бот)] страницы':
+                                                send('Введите номер страницы: ')
+                                                if send_ex(file=file, site=site, n='-s/') == 'break': break
+                                                break
+                                            else:
+                                                send('Ты чо сказал я не понял пака')
+                                                break
+                                        break
+                                    else:
+                                        send('Ты чо сказал я не понял пака')
+                                        break
+                                break
+                            elif event.object.text.lower() == '[club192674616|@dapizdabot] обж' or event.object.text.lower() == '[club192674616|да (бот)] обж':
+                                site += 'obj/'
+                                file += 'obj/'
+                                send_keyboard('Фролов', mes='Выберите учебник: ')
+                                for event in longpoll.listen():
+                                    if event.object.text.lower() == '[club192674616|@dapizdabot] фролов' or event.object.text.lower() == '[club192674616|да (бот)] фролов':
+                                        site += 'frolov/'
+                                        file += 'frolov/'
+                                        send_keyboard('Страницы', mes='Выберите: ')
+                                        for event in longpoll.listen():
+                                            if event.object.text.lower() == '[club192674616|@dapizdabot] страницы' or event.object.text.lower() == '[club192674616|да (бот)] страницы':
+                                                send('Введите номер страницы: ')
+                                                if send_ex(file=file, site=site, n='-s/') == 'break': break
+                                                break
+                                            else:
+                                                send('Ты чо сказал я не понял пака')
+                                                break
+                                        break
+                                    else:
+                                        send('Ты чо сказал я не понял пака')
+                                        break
+                                break
+                            elif event.object.text.lower() == '[club192674616|@dapizdabot] украинский язык' or event.object.text.lower() == '[club192674616|да (бот)] украинский язык':
+                                site += 'ukrainskiy_yazik/'
+                                file += 'ukrainskiy_yazik/'
+                                send_keyboard('Глазова', mes='Выберите учебник: ')
+                                for event in longpoll.listen():
+                                    if event.object.text.lower() == '[club192674616|@dapizdabot] глазова' or event.object.text.lower() == '[club192674616|да (бот)] глазова':
+                                        site += 'glazova-o-p/'
+                                        file += 'glazova-o-p/'
+                                        send_keyboard('Упражнения', mes='Выберите: ')
+                                        for event in longpoll.listen():
+                                            if event.object.text.lower() == '[club192674616|@dapizdabot] упражнения' or event.object.text.lower() == '[club192674616|да (бот)] упражнения':
+                                                send('Введите номер упражнения: ')
+                                                if send_ex(file=file, site=site, n='-nom/') == 'break': break
+                                                break
+                                            else:
+                                                send('Ты чо сказал я не понял пака')
+                                                break
+                                        break
+                                    else:
+                                        send('Ты чо сказал я не понял пака')
+                                        break
+                                break
+                            elif event.object.text.lower() == '[club192674616|@dapizdabot] технология' or event.object.text.lower() == '[club192674616|да (бот)] технология':
+                                site += 'tekhnologiya/'
+                                file += 'tekhnologiya/'
+                                send_keyboard('Синица и Симоненко', mes='Выберите учебник: ')
+                                for event in longpoll.listen():
+                                    if event.object.text.lower() == '[club192674616|@dapizdabot] синица и симоненко' or event.object.text.lower() == '[club192674616|да (бот)] синица и симоненко':
+                                        site += 'sinica-simonenko/'
+                                        file += 'sinica-simonenko/'
+                                        send_keyboard('Страницы', mes='Выберите: ')
+                                        for event in longpoll.listen():
+                                            if event.object.text.lower() == '[club192674616|@dapizdabot] страницы' or event.object.text.lower() == '[club192674616|да (бот)] страницы':
+                                                send('Введите номер страницы: ')
+                                                if send_ex(file=file, site=site, n='-s/') == 'break': break
+                                                break
+                                            else:
+                                                send('Ты чо сказал я не понял пака')
+                                                break
+                                        break
+                                    else:
+                                        send('Ты чо сказал я не понял пака')
+                                        break
+                                break
+                            elif event.object.text.lower() == '[club192674616|@dapizdabot] обществознание' or event.object.text.lower() == '[club192674616|да (бот)] обществознание':
+                                site += 'obshhestvoznanie/'
+                                file += 'obshhestvoznanie/'
+                                send_keyboard('Боголюбов', mes='Выберите учебник: ')
+                                for event in longpoll.listen():
+                                    if event.object.text.lower() == '[club192674616|@dapizdabot] боголюбов' or event.object.text.lower() == '[club192674616|да (бот)] боголюбов':
+                                        site += 'reshebnik-bogolyubov-l-n/'
+                                        file += 'reshebnik-bogolyubov-l-n/'
+                                        send_keyboard('Параграфы', 'Обобщения', mes='Выберите: ')
+                                        for event in longpoll.listen():
+                                            if event.object.text.lower() == '[club192674616|@dapizdabot] параграфы' or event.object.text.lower() == '[club192674616|да (бот)] параграфы':
+                                                send('Введите номер параграфа: ')
+                                                for event in longpoll.listen():
+                                                    try:
+                                                        int(event.object.text)
+                                                    except Exception as e:
+                                                        print(e)
+                                                        send('Тяжело ввести число штолле')
+                                                        break
+                                                    site += event.object.text + '-item-'
+                                                    file += event.object.text + '-item-/'
+                                                    send('Введите номер задания: ')
+                                                    if send_ex(file=file, site=site, n=0) == 'break': break
+                                                    break
+                                                break
+                                            elif event.object.text.lower() == '[club192674616|@dapizdabot] обобщения' or event.object.text.lower() == '[club192674616|да (бот)] обобщения':
+                                                send('Введите номер обобщения: ')
+                                                for event in longpoll.listen():
+                                                    try:
+                                                        int(event.object.text)
+                                                    except Exception as e:
+                                                        print(e)
+                                                        send('Тяжело ввести число штолле')
+                                                        break
+                                                    site += event.object.text + '-obob-'
+                                                    file += event.object.text + '-obob-/'
+                                                    send('Введите номер задания: ')
+                                                    if send_ex(file=file, site=site, n=0) == 'break': break
+                                                    break
+                                                break
+                                            else:
+                                                send('Ты чо сказал я не понял пака')
+                                                break
+                                        break
+                                    else:
+                                        send('Ты чо сказал я не понял пака')
+                                        break
+                                break
+                            elif event.object.text.lower() == '[club192674616|@dapizdabot] музыка' or event.object.text.lower() == '[club192674616|да (бот)] музыка':
+                                site += 'muzyka/'
+                                file += 'muzyka/'
+                                send_keyboard('Сергеева', mes='Выберите учебник: ')
+                                for event in longpoll.listen():
+                                    if event.object.text.lower() == '[club192674616|@dapizdabot] сергеева' or event.object.text.lower() == '[club192674616|да (бот)] сергеева':
+                                        site += 'sergeeva-tvorcheskaya-tetrad/'
+                                        file += 'sergeeva-tvorcheskaya-tetrad/'
+                                        send_keyboard('Страницы', mes='Выберите: ')
+                                        for event in longpoll.listen():
+                                            if event.object.text.lower() == '[club192674616|@dapizdabot] страницы' or event.object.text.lower() == '[club192674616|да (бот)] страницы':
+                                                send('Введите номер страницы: ')
+                                                if send_ex(file=file, site=site, n='-s/') == 'break': break
+                                                break
+                                            else:
+                                                send('Ты чо сказал я не понял пака')
+                                                break
+                                        break
+                                    else:
+                                        send('Ты чо сказал я не понял пака')
+                                        break
+                                break
+                            elif event.object.text.lower() == '[club192674616|@dapizdabot] литература' or event.object.text.lower() == '[club192674616|да (бот)] литература':
+                                site += 'literatura/'
+                                file += 'literatura/'
+                                send_keyboard('1 Часть', '2 Часть', mes='Выберите часть: ')
+                                for event in longpoll.listen():
+                                    if event.object.text.lower() == '[club192674616|@dapizdabot] 1 часть' or event.object.text.lower() == '[club192674616|да (бот)] 1 часть':
+                                        site = site + '1-prt-'
+                                        file = file + '1-prt-/'
+                                        send('Введите номер страницы: ')
+                                        if send_ex(file=file, site=site, n=0) == 'break': break
+                                        break
+                                    elif event.object.text.lower() == '[club192674616|@dapizdabot] 2 часть' or event.object.text.lower() == '[club192674616|да (бот)] 2 часть':
+                                        site = site + '2-prt-'
+                                        file = file + '2-prt-/'
+                                        send('Введите номер страницы: ')
+                                        if send_ex(file=file, site=site, n=0) == 'break': break
+                                        break
+                                    else:
+                                        send('Ты чо сказал я не понял пака')
+                                        break
+                                break
+                            elif event.object.text.lower() == '[club192674616|@dapizdabot] химия' or event.object.text.lower() == '[club192674616|да (бот)] химия':
+                                site += 'himiya/'
+                                file += 'himiya/'
+                                send_keyboard('Габриелян', mes='Выберите учебник: ')
+                                for event in longpoll.listen():
+                                    if event.object.text.lower() == '[club192674616|@dapizdabot] габриелян' or event.object.text.lower() == '[club192674616|да (бот)] габриелян':
+                                        site += 'gabrielyan-vvodnij-kurs/'
+                                        file += 'gabrielyan-vvodnij-kurs/'
+                                        send_keyboard('Вопросы в конце параграфа', mes='Выберите: ')
+                                        for event in longpoll.listen():
+                                            if event.object.text.lower() == '[club192674616|@dapizdabot] вопросы в конце параграфа' or event.object.text.lower() == '[club192674616|да (бот)] вопросы в конце параграфа':
+                                                send('Введите номер параграфа: ')
+                                                for event in longpoll.listen():
+                                                    try:
+                                                        int(event.object.text)
+                                                    except Exception as e:
+                                                        print(e)
+                                                        send('Тяжело ввести число штолле')
+                                                        break
+                                                    site += event.object.text + '-quest-'
+                                                    file += event.object.text + '-quest-/'
+                                                    send('Введите номер задания: ')
+                                                    if send_ex(file=file, site=site, n=0) == 'break': break
+                                                    break
+                                                break
+                                            else:
+                                                send('Ты чо сказал я не понял пака')
+                                                break
+                                        break
+                                    else:
+                                        send('Ты чо сказал я не понял пака')
+                                        break
+                                break
+                            elif event.object.text.lower() == '[club192674616|@dapizdabot] география' or event.object.text.lower() == '[club192674616|да (бот)] география':
+                                site += 'geografiya/'
+                                file += 'geografiya/'
+                                send_keyboard('Коринская', mes='Выберите учебник: ')
+                                for event in longpoll.listen():
+                                    if event.object.text.lower() == '[club192674616|@dapizdabot] коринская' or event.object.text.lower() == '[club192674616|да (бот)] коринская':
+                                        site += 'korinskaja/'
+                                        file += 'korinskaja/'
+                                        send_keyboard('Параграфы', mes='Выберите: ')
+                                        for event in longpoll.listen():
+                                            if event.object.text.lower() == '[club192674616|@dapizdabot] параграфы' or event.object.text.lower() == '[club192674616|да (бот)] параграфы':
+                                                send('Введите номер параграфа: ')
+                                                if send_ex(file=file, site=site, n='-item/') == 'break': break
+                                                break
+                                            else:
+                                                send('Ты чо сказал я не понял пака')
+                                                break
+                                        break
+                                    else:
+                                        send('Ты чо сказал я не понял пака')
+                                        break
+                                break
                             else:
                                 send('Ты чо сказал я не понял пака')
                                 break

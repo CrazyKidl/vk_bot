@@ -437,6 +437,294 @@ def main():
                                                     send('Ты чо сказал я не понял пака')
                                                     break
                                         break
+                                    elif event.text.lower() == 'биология' or event.text.lower() == 'биология':
+                                        site += 'biologiya/'
+                                        file += 'biologiya/'
+                                        send_keyboard('Пасечник', mes='Выберите учебник: ')
+                                        for event in longpoll.listen():
+                                            if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                if event.text.lower() == 'пасечник' or event.text.lower() == 'пасечник':
+                                                    site += 'pasechnik-tetrad/'
+                                                    file += 'pasechnik-tetrad/'
+                                                    send_keyboard('Параграфы', mes='Выберите: ')
+                                                    for event in longpoll.listen():
+                                                        if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                            if event.text.lower() == 'параграфы' or event.text.lower() == 'параграфы':
+                                                                send('Введите номер параграфа: ')
+                                                                if send_ex(file=file, site=site,
+                                                                           n='-item/') == 'break': break
+                                                                break
+                                                            else:
+                                                                send('Ты чо сказал я не понял пака')
+                                                                break
+                                                    break
+                                                else:
+                                                    send('Ты чо сказал я не понял пака')
+                                                    break
+                                        break
+                                    elif event.text.lower() == 'немецкий язык' or event.text.lower() == 'немецкий язык':
+                                        site += 'nemeckiy_yazik/'
+                                        file += 'nemeckiy_yazik/'
+                                        send_keyboard('Бим', mes='Выберите учебник: ')
+                                        for event in longpoll.listen():
+                                            if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                if event.text.lower() == 'бим' or event.text.lower() == 'бим':
+                                                    site += 'bim/'
+                                                    file += 'bim/'
+                                                    send_keyboard('Страницы', mes='Выберите: ')
+                                                    for event in longpoll.listen():
+                                                        if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                            if event.text.lower() == 'страницы' or event.text.lower() == 'страницы':
+                                                                send('Введите номер страницы: ')
+                                                                if send_ex(file=file, site=site,
+                                                                           n='-s/') == 'break': break
+                                                                break
+                                                            else:
+                                                                send('Ты чо сказал я не понял пака')
+                                                                break
+                                                    break
+                                                else:
+                                                    send('Ты чо сказал я не понял пака')
+                                                    break
+                                        break
+                                    elif event.text.lower() == 'обж' or event.text.lower() == 'обж':
+                                        site += 'obj/'
+                                        file += 'obj/'
+                                        send_keyboard('Фролов', mes='Выберите учебник: ')
+                                        for event in longpoll.listen():
+                                            if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                if event.text.lower() == 'фролов' or event.text.lower() == 'фролов':
+                                                    site += 'frolov/'
+                                                    file += 'frolov/'
+                                                    send_keyboard('Страницы', mes='Выберите: ')
+                                                    for event in longpoll.listen():
+                                                        if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                            if event.text.lower() == 'страницы' or event.text.lower() == 'страницы':
+                                                                send('Введите номер страницы: ')
+                                                                if send_ex(file=file, site=site,
+                                                                           n='-s/') == 'break': break
+                                                                break
+                                                            else:
+                                                                send('Ты чо сказал я не понял пака')
+                                                                break
+                                                    break
+                                                else:
+                                                    send('Ты чо сказал я не понял пака')
+                                                    break
+                                        break
+                                    elif event.text.lower() == 'украинский язык' or event.text.lower() == 'украинский язык':
+                                        site += 'ukrainskiy_yazik/'
+                                        file += 'ukrainskiy_yazik/'
+                                        send_keyboard('Глазова', mes='Выберите учебник: ')
+                                        for event in longpoll.listen():
+                                            if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                if event.text.lower() == 'глазова' or event.text.lower() == 'глазова':
+                                                    site += 'glazova-o-p/'
+                                                    file += 'glazova-o-p/'
+                                                    send_keyboard('Упражнения', mes='Выберите: ')
+                                                    for event in longpoll.listen():
+                                                        if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                            if event.text.lower() == 'упражнения' or event.text.lower() == 'упражнения':
+                                                                send('Введите номер упражнения: ')
+                                                                if send_ex(file=file, site=site,
+                                                                           n='-nom/') == 'break': break
+                                                                break
+                                                            else:
+                                                                send('Ты чо сказал я не понял пака')
+                                                                break
+                                                    break
+                                                else:
+                                                    send('Ты чо сказал я не понял пака')
+                                                    break
+                                        break
+                                    elif event.text.lower() == 'технология' or event.text.lower() == 'технология':
+                                        site += 'tekhnologiya/'
+                                        file += 'tekhnologiya/'
+                                        send_keyboard('Синица и Симоненко', mes='Выберите учебник: ')
+                                        for event in longpoll.listen():
+                                            if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                if event.text.lower() == 'синица и симоненко' or event.text.lower() == 'синица и симоненко':
+                                                    site += 'sinica-simonenko/'
+                                                    file += 'sinica-simonenko/'
+                                                    send_keyboard('Страницы', mes='Выберите: ')
+                                                    for event in longpoll.listen():
+                                                        if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                            if event.text.lower() == 'страницы' or event.text.lower() == 'страницы':
+                                                                send('Введите номер страницы: ')
+                                                                if send_ex(file=file, site=site,
+                                                                           n='-s/') == 'break': break
+                                                                break
+                                                            else:
+                                                                send('Ты чо сказал я не понял пака')
+                                                                break
+                                                    break
+                                                else:
+                                                    send('Ты чо сказал я не понял пака')
+                                                    break
+                                        break
+                                    elif event.text.lower() == 'обществознание' or event.text.lower() == 'обществознание':
+                                        site += 'obshhestvoznanie/'
+                                        file += 'obshhestvoznanie/'
+                                        send_keyboard('Боголюбов', mes='Выберите учебник: ')
+                                        for event in longpoll.listen():
+                                            if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                if event.text.lower() == 'боголюбов' or event.text.lower() == 'боголюбов':
+                                                    site += 'reshebnik-bogolyubov-l-n/'
+                                                    file += 'reshebnik-bogolyubov-l-n/'
+                                                    send_keyboard('Параграфы', 'Обобщения', mes='Выберите: ')
+                                                    for event in longpoll.listen():
+                                                        if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                            if event.text.lower() == 'параграфы' or event.text.lower() == 'параграфы':
+                                                                send('Введите номер параграфа: ')
+                                                                for event in longpoll.listen():
+                                                                    if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                                        try:
+                                                                            int(event.text)
+                                                                        except Exception as e:
+                                                                            print(e)
+                                                                            send('Тяжело ввести число штолле')
+                                                                            break
+                                                                        site += event.text + '-item-'
+                                                                        file += event.text + '-item-/'
+                                                                        send('Введите номер задания: ')
+                                                                        if send_ex(file=file, site=site,
+                                                                                   n=0) == 'break': break
+                                                                        break
+                                                                break
+                                                            elif event.text.lower() == 'обобщения' or event.text.lower() == 'обобщения':
+                                                                send('Введите номер обобщения: ')
+                                                                for event in longpoll.listen():
+                                                                    if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                                        try:
+                                                                            int(event.text)
+                                                                        except Exception as e:
+                                                                            print(e)
+                                                                            send('Тяжело ввести число штолле')
+                                                                            break
+                                                                        site += event.text + '-obob-'
+                                                                        file += event.text + '-obob-/'
+                                                                        send('Введите номер задания: ')
+                                                                        if send_ex(file=file, site=site,
+                                                                                   n=0) == 'break': break
+                                                                        break
+                                                                break
+                                                            else:
+                                                                send('Ты чо сказал я не понял пака')
+                                                                break
+                                                    break
+                                                else:
+                                                    send('Ты чо сказал я не понял пака')
+                                                    break
+                                        break
+                                    elif event.text.lower() == 'музыка' or event.text.lower() == 'музыка':
+                                        site += 'muzyka/'
+                                        file += 'muzyka/'
+                                        send_keyboard('Сергеева', mes='Выберите учебник: ')
+                                        for event in longpoll.listen():
+                                            if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                if event.text.lower() == 'сергеева' or event.text.lower() == 'сергеева':
+                                                    site += 'sergeeva-tvorcheskaya-tetrad/'
+                                                    file += 'sergeeva-tvorcheskaya-tetrad/'
+                                                    send_keyboard('Страницы', mes='Выберите: ')
+                                                    for event in longpoll.listen():
+                                                        if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                            if event.text.lower() == 'страницы' or event.text.lower() == 'страницы':
+                                                                send('Введите номер страницы: ')
+                                                                if send_ex(file=file, site=site,
+                                                                           n='-s/') == 'break': break
+                                                                break
+                                                            else:
+                                                                send('Ты чо сказал я не понял пака')
+                                                                break
+                                                    break
+                                                else:
+                                                    send('Ты чо сказал я не понял пака')
+                                                    break
+                                        break
+                                    elif event.text.lower() == 'литература' or event.text.lower() == 'литература':
+                                        site += 'literatura/'
+                                        file += 'literatura/'
+                                        send_keyboard('1 Часть', '2 Часть', mes='Выберите часть: ')
+                                        for event in longpoll.listen():
+                                            if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                if event.text.lower() == '1 часть' or event.text.lower() == '1 часть':
+                                                    site = site + '1-prt-'
+                                                    file = file + '1-prt-/'
+                                                    send('Введите номер страницы: ')
+                                                    if send_ex(file=file, site=site, n=0) == 'break': break
+                                                    break
+                                                elif event.text.lower() == '2 часть' or event.text.lower() == '2 часть':
+                                                    site = site + '2-prt-'
+                                                    file = file + '2-prt-/'
+                                                    send('Введите номер страницы: ')
+                                                    if send_ex(file=file, site=site, n=0) == 'break': break
+                                                    break
+                                                else:
+                                                    send('Ты чо сказал я не понял пака')
+                                                    break
+                                        break
+                                    elif event.text.lower() == 'химия' or event.text.lower() == 'химия':
+                                        site += 'himiya/'
+                                        file += 'himiya/'
+                                        send_keyboard('Габриелян', mes='Выберите учебник: ')
+                                        for event in longpoll.listen():
+                                            if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                if event.text.lower() == 'габриелян' or event.text.lower() == 'габриелян':
+                                                    site += 'gabrielyan-vvodnij-kurs/'
+                                                    file += 'gabrielyan-vvodnij-kurs/'
+                                                    send_keyboard('Вопросы в конце параграфа', mes='Выберите: ')
+                                                    for event in longpoll.listen():
+                                                        if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                            if event.text.lower() == 'вопросы в конце параграфа' or event.text.lower() == 'вопросы в конце параграфа':
+                                                                send('Введите номер параграфа: ')
+                                                                for event in longpoll.listen():
+                                                                    if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                                        try:
+                                                                            int(event.text)
+                                                                        except Exception as e:
+                                                                            print(e)
+                                                                            send('Тяжело ввести число штолле')
+                                                                            break
+                                                                        site += event.text + '-quest-'
+                                                                        file += event.text + '-quest-/'
+                                                                        send('Введите номер задания: ')
+                                                                        if send_ex(file=file, site=site,
+                                                                                   n=0) == 'break': break
+                                                                        break
+                                                                break
+                                                            else:
+                                                                send('Ты чо сказал я не понял пака')
+                                                                break
+                                                    break
+                                                else:
+                                                    send('Ты чо сказал я не понял пака')
+                                                    break
+                                        break
+                                    elif event.text.lower() == 'география' or event.text.lower() == 'география':
+                                        site += 'geografiya/'
+                                        file += 'geografiya/'
+                                        send_keyboard('Коринская', mes='Выберите учебник: ')
+                                        for event in longpoll.listen():
+                                            if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                if event.text.lower() == 'коринская' or event.text.lower() == 'коринская':
+                                                    site += 'korinskaja/'
+                                                    file += 'korinskaja/'
+                                                    send_keyboard('Параграфы', mes='Выберите: ')
+                                                    for event in longpoll.listen():
+                                                        if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                                            if event.text.lower() == 'параграфы' or event.text.lower() == 'параграфы':
+                                                                send('Введите номер параграфа: ')
+                                                                if send_ex(file=file, site=site,
+                                                                           n='-item/') == 'break': break
+                                                                break
+                                                            else:
+                                                                send('Ты чо сказал я не понял пака')
+                                                                break
+                                                    break
+                                                else:
+                                                    send('Ты чо сказал я не понял пака')
+                                                    break
+                                        break
                                     else:
                                         send('Ты чо сказал я не понял пака')
                                         break
