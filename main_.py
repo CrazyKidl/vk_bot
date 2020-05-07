@@ -212,6 +212,34 @@ def main():
                                              keyboard=keyboard.get_keyboard(),
                                              message='Можно не деньгами просто потестируй меня(')
                             break
+                        elif event.text.lower() == '11 класс' or event.text.lower() == '11 класс':
+                            site += 'class-11/'
+                            file += 'class-11/'
+                            send_keyboard('!', mes='Выберите предмет: ')
+                            for event in longpoll.listen():
+                                if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                    send('!')
+                        elif event.text.lower() == '10 класс' or event.text.lower() == '10 класс':
+                            site += 'class-10/'
+                            file += 'class-10/'
+                            send_keyboard('!', mes='Выберите предмет: ')
+                            for event in longpoll.listen():
+                                if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                    send('!')
+                        elif event.text.lower() == '9 класс' or event.text.lower() == '9 класс':
+                            site += 'class-9/'
+                            file += 'class-9/'
+                            send_keyboard('!', mes='Выберите предмет: ')
+                            for event in longpoll.listen():
+                                if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                    send('!')
+                        elif event.text.lower() == '8 класс' or event.text.lower() == '8 класс':
+                            site += 'class-8/'
+                            file += 'class-8/'
+                            send_keyboard('!', mes='Выберите предмет: ')
+                            for event in longpoll.listen():
+                                if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                    send('!')
                         elif event.text.lower() == '7 класс':
                             site += 'class-7/'
                             file += 'class-7/'
@@ -771,6 +799,41 @@ def main():
                                         send('Ты чо сказал я не понял пака')
                                         break
                             break
+                        elif event.text.lower() == '5 класс' or event.text.lower() == '5 класс':
+                            site += 'class-5/'
+                            file += 'class-5/'
+                            send_keyboard('!', mes='Выберите предмет: ')
+                            for event in longpoll.listen():
+                                if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                    send('!')
+                        elif event.text.lower() == '4 класс' or event.text.lower() == '4 класс':
+                            site += 'class-4/'
+                            file += 'class-4/'
+                            send_keyboard('!', mes='Выберите предмет: ')
+                            for event in longpoll.listen():
+                                if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                    send('!')
+                        elif event.text.lower() == '3 класс' or event.text.lower() == '3 класс':
+                            site += 'class-3/'
+                            file += 'class-3/'
+                            send_keyboard('!', mes='Выберите предмет: ')
+                            for event in longpoll.listen():
+                                if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                    send('!')
+                        elif event.text.lower() == '2 класс' or event.text.lower() == '2 класс':
+                            site += 'class-2/'
+                            file += 'class-2/'
+                            send_keyboard('!', mes='Выберите предмет: ')
+                            for event in longpoll.listen():
+                                if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                    send('!')
+                        elif event.text.lower() == '1 класс' or event.text.lower() == '1 класс':
+                            site += 'class-1/'
+                            file += 'class-1/'
+                            send_keyboard('!', mes='Выберите предмет: ')
+                            for event in longpoll.listen():
+                                if event.type == VkEventType.MESSAGE_NEW and event.from_user and event.from_me == False:
+                                    send('!')
                         elif event.text.lower() == 'отмена':
                             send('Ну ладна пака')
                             break
