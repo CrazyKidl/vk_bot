@@ -205,7 +205,7 @@ def main():
             elif event.object.text.lower() == 'гдз' or event.object.text.lower() == 'gdz' or event.object.text.lower() == 'ulp' or event.object.text.lower() == 'пвя':
                 site = 'https://gdz.ru/'
                 file = 'gdz/'
-                send_k('7 класс', '6 класс', 'Поддержка разрабов деньгами', 'Отмена', mes='Выберите действие: ')
+                send_k('11 класс', '10 класс', '9 класс', '8 класс', '7 класс', '6 класс', '5 класс', '4 класс', '3 класс', '2 класс', '1 класс', 'Поддержка разрабов деньгами', 'Отмена', mes='Выберите действие: ')
                 for event in longpoll.listen():
                     if event.object.text.lower() == '[club192674616|@dapizdabot] поддержка разрабов деньгами' or event.object.text.lower() == '[club192674616|да (бот)] поддержка разрабов деньгами':
                         keyboard = VkKeyboard(one_time=True)
@@ -214,6 +214,30 @@ def main():
                                          keyboard=keyboard.get_keyboard(),
                                          message='Можно не деньгами просто потестируй меня(')
                         break
+                    elif event.object.text.lower() == '[club192674616|@dapizdabot] 11 класс' or event.object.text.lower() == '[club192674616|да (бот)] 11 класс':
+                        site += 'class-11/'
+                        file += 'class-11/'
+                        send_keyboard('!', mes='Выберите предмет: ')
+                        for event in longpoll.listen():
+                            send('!')
+                    elif event.object.text.lower() == '[club192674616|@dapizdabot] 10 класс' or event.object.text.lower() == '[club192674616|да (бот)] 10 класс':
+                        site += 'class-10/'
+                        file += 'class-10/'
+                        send_keyboard('!', mes='Выберите предмет: ')
+                        for event in longpoll.listen():
+                            send('!')
+                    elif event.object.text.lower() == '[club192674616|@dapizdabot] 9 класс' or event.object.text.lower() == '[club192674616|да (бот)] 9 класс':
+                        site += 'class-9/'
+                        file += 'class-9/'
+                        send_keyboard('!', mes='Выберите предмет: ')
+                        for event in longpoll.listen():
+                            send('!')
+                    elif event.object.text.lower() == '[club192674616|@dapizdabot] 8 класс' or event.object.text.lower() == '[club192674616|да (бот)] 8 класс':
+                        site += 'class-8/'
+                        file += 'class-8/'
+                        send_keyboard('!', mes='Выберите предмет: ')
+                        for event in longpoll.listen():
+                            send('!')
                     elif event.object.text.lower() == '[club192674616|@dapizdabot] 7 класс' or event.object.text.lower() == '[club192674616|да (бот)] 7 класс':
                         site += 'class-7/'
                         file += 'class-7/'
@@ -709,6 +733,36 @@ def main():
                                 send('Ты чо сказал я не понял пака')
                                 break
                         break
+                    elif event.object.text.lower() == '[club192674616|@dapizdabot] 5 класс' or event.object.text.lower() == '[club192674616|да (бот)] 5 класс':
+                        site += 'class-5/'
+                        file += 'class-5/'
+                        send_keyboard('!', mes='Выберите предмет: ')
+                        for event in longpoll.listen():
+                            send('!')
+                    elif event.object.text.lower() == '[club192674616|@dapizdabot] 4 класс' or event.object.text.lower() == '[club192674616|да (бот)] 4 класс':
+                        site += 'class-4/'
+                        file += 'class-4/'
+                        send_keyboard('!', mes='Выберите предмет: ')
+                        for event in longpoll.listen():
+                            send('!')
+                    elif event.object.text.lower() == '[club192674616|@dapizdabot] 3 класс' or event.object.text.lower() == '[club192674616|да (бот)] 3 класс':
+                        site += 'class-3/'
+                        file += 'class-3/'
+                        send_keyboard('!', mes='Выберите предмет: ')
+                        for event in longpoll.listen():
+                            send('!')
+                    elif event.object.text.lower() == '[club192674616|@dapizdabot] 2 класс' or event.object.text.lower() == '[club192674616|да (бот)] 2 класс':
+                        site += 'class-2/'
+                        file += 'class-2/'
+                        send_keyboard('!', mes='Выберите предмет: ')
+                        for event in longpoll.listen():
+                            send('!')
+                    elif event.object.text.lower() == '[club192674616|@dapizdabot] 1 класс' or event.object.text.lower() == '[club192674616|да (бот)] 1 класс':
+                        site += 'class-1/'
+                        file += 'class-1/'
+                        send_keyboard('!', mes='Выберите предмет: ')
+                        for event in longpoll.listen():
+                            send('!')
                     elif event.object.text.lower() == '[club192674616|@dapizdabot] отмена' or event.object.text.lower() == '[club192674616|да (бот)] отмена':
                         send('Ну ладна пака')
                         break

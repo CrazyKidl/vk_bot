@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import cfscrape
+import os
 
 go = input('Go?')
 
@@ -12,17 +13,16 @@ def start(q):
         site = 'https://gdz.ru/class-7/himiya/gabrielyan-vvodnij-kurs/' + str(q) + '-quest-' + str(i) + '/'
         soup = BeautifulSoup(cfscrape.create_scraper().get(site).content.decode('utf-8'), 'html.parser')
         for k in soup.findAll('img'):
-            true_images.append('http:' + k.get('src'))
+            true_images.append('https:' + k.get('src'))
         try:
             for l in true_images:
-                if l[0:39] == 'http://gdz.ru/attachments/images/tasks/':
+                if l[0:40] == 'https://gdz.ru/attachments/images/tasks/':
                     images.append(l)
         except Exception:
             pass
-        file = open('gdz/class-7/himiya/gabrielyan-vvodnij-kurs/' + str(q) + '-quest-/' + str(i) + '.txt', 'w')
-        for j in images:
-            file.write(j + '\n')
-        file.close()
+        with open(os.mkdir('C:/Users/PycharmProjects/vk_bot/gdz/class-7/himiya/gabrielyan-vvodnij-kurs/' + str(q) + '-quest-/') + str(i) + '.txt', 'w') as file:
+            for j in images:
+                file.write(j + '\n')
         i += 1
 
 
